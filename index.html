@@ -6,9 +6,7 @@
 <p align="center" style="font-family:courier">Time until John McAfee has to eat his dick.</p>
 <p align="center" id="demo" style="font-family:courier"></p>
 
-<p>
-    <div>Example price: <span data-btc-price="1.0">1.0 BTC</span></div>
-</p>
+<div class="btcwdgt-price"></div>
 
 <script>
 // Set the date we're counting down to
@@ -92,6 +90,15 @@ var x = setInterval(function() {
 
         });
     });
+</script>
+<script>
+  (function(b,i,t,C,O,I,N) {
+    window.addEventListener('load',function() {
+      if(b.getElementById(C))return;
+      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+    },false)
+  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
 </script>
 </body>
 </html>
